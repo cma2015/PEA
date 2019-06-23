@@ -7,10 +7,10 @@
 ![](https://tctechcrunch2011.files.wordpress.com/2014/06/apple_topic.png?w=220)
 ### Brief introduction
 PEA is a docker-based integrated R toolkit that aims to facilitate the plant epitranscriptome analysis. This toolkit contains a comprehensive collection of functions required for read mapping, CMR calling, motif scanning and discovery, and gene functional enrichment analysis. PEA also takes advantage of machine learning technologies for transcriptome-scale CMR prediction, with high prediction accuracy, using the Positive Samples Only Learning algorithm, which addresses the two-class classification problem by using only positive samples (CMRs), in the absence of negative samples (non-CMRs). Hence PEA is a versatile epitranscriptome analysis pipeline covering CMR calling, prediction, and annotation.
-
+ 
+### Table of Contents
 <!-- TOC -->
 [Brief introduction](#brief-instroduction)
-
 [PEA installation](#pea-installation)
 
 [CMR calling](#cmr-calling)
