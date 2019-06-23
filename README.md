@@ -4,10 +4,8 @@
 [PEA installation](#pea-installation)
 
 [CMR calling](#cmr-calling)
-
-        - [Reads mapping using tophat](#reads-mapping-using-tophat)
-
-        - [Peak calling methods implemented in PEA](#peak-calling-methods-implemented-in-PEA)
+- [Reads mapping using tophat](#reads-mapping-using-tophat)
+- [Peak calling methods implemented in PEA](#peak-calling-methods-implemented-in-PEA)
 
 [CMR prediction](#cmr-prediction)
 
