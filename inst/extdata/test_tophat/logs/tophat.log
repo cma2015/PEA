@@ -1,0 +1,30 @@
+
+[2018-04-12 13:20:21] Beginning TopHat run (v2.1.0)
+-----------------------------------------------
+[2018-04-12 13:20:21] Checking for Bowtie
+		  Bowtie version:	 1.1.2.0
+[2018-04-12 13:20:21] Checking for Bowtie index files (genome)..
+[2018-04-12 13:20:21] Checking for reference FASTA file
+	Warning: Could not find FASTA file chromosome1.fa.fa
+[2018-04-12 13:20:21] Reconstituting reference FASTA file from Bowtie index
+  Executing: /usr/bin/bowtie-inspect chromosome1.fa > test_tophat/tmp/chromosome1.fa.fa
+[2018-04-12 13:20:21] Generating SAM header for chromosome1.fa
+[2018-04-12 13:20:21] Preparing reads
+	 left reads: min. length=101, max. length=101, 44451 kept reads (0 discarded)
+[2018-04-12 13:20:22] Mapping left_kept_reads to genome chromosome1.fa with Bowtie 
+[2018-04-12 13:20:27] Mapping left_kept_reads_seg1 to genome chromosome1.fa with Bowtie (1/4)
+[2018-04-12 13:20:27] Mapping left_kept_reads_seg2 to genome chromosome1.fa with Bowtie (2/4)
+[2018-04-12 13:20:27] Mapping left_kept_reads_seg3 to genome chromosome1.fa with Bowtie (3/4)
+[2018-04-12 13:20:28] Mapping left_kept_reads_seg4 to genome chromosome1.fa with Bowtie (4/4)
+[2018-04-12 13:20:28] Searching for junctions via segment mapping
+[2018-04-12 13:20:28] Retrieving sequences for splices
+[2018-04-12 13:20:28] Indexing splices
+[2018-04-12 13:20:29] Mapping left_kept_reads_seg1 to genome segment_juncs with Bowtie (1/4)
+[2018-04-12 13:20:29] Mapping left_kept_reads_seg2 to genome segment_juncs with Bowtie (2/4)
+[2018-04-12 13:20:29] Mapping left_kept_reads_seg3 to genome segment_juncs with Bowtie (3/4)
+[2018-04-12 13:20:29] Mapping left_kept_reads_seg4 to genome segment_juncs with Bowtie (4/4)
+[2018-04-12 13:20:30] Joining segment hits
+[2018-04-12 13:20:30] Reporting output tracks
+-----------------------------------------------
+[2018-04-12 13:20:32] A summary of the alignment counts can be found in test_tophat/align_summary.txt
+[2018-04-12 13:20:32] Run complete: 00:00:10 elapsed
