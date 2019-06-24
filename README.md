@@ -10,7 +10,6 @@ PEA is a docker-based integrated R toolkit that aims to facilitate the plant epi
  
 ### Table of Contents
 <!-- TOC -->
-[Brief introduction](#brief-instroduction)
 [PEA installation](#pea-installation)
 
 [CMR calling](#cmr-calling)
