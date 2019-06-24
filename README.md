@@ -1,7 +1,4 @@
-
-
-
-### **PEA**: An integrated R toolkit for plant epitranscriptome analysis
+# <center>**PEA**: An integrated R toolkit for plant epitranscriptome analysis</center>
 ![](https://halobi.com/wp-content/uploads/2016/08/r_logo.png "R logo")
 ![](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvCvZWbl922EJkjahQ5gmTpcvsYr3ujQBpMdyX-YG99vGWfTAmfw "linux logo")
 ![](https://tctechcrunch2011.files.wordpress.com/2014/06/apple_topic.png?w=220)
