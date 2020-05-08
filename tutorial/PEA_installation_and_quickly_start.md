@@ -14,7 +14,7 @@ $ docker pull malab/pea:v1.1
 Once PEA is installed successfully, type the following command to start PEA: 
 - For **rstudio version**
 ```bash
-docker run -d -p 8787:8787 -v /host directory of dataset:/home/rstudio -e ROOT=TRUE -e PASSWORD=pea malab/pea:v1.1_rstudio
+docker run -d -p 8787:8787 -v /host directory of dataset:/home/rstudio -e ROOT=TRUE -e PASSWORD=pea malab/pea:v1.2_rstudio
 ```
 Then an rstudio-server with pre-installed PEA can be accessed via: http://localhost:8787 (**Username: rstudio; password: pea**)
 ![rstudio](./images/rstudio.png)

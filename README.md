@@ -230,6 +230,11 @@ enrichment <- CMRAnnotation(cmrMat = peaks, GTF = GTF, annotation = "GO", topNod
 * If users encounter any bugs or issues, feel free to leave a message at Github [issues](<https://github.com/cma2015/PEA/issues>). We will try our best to deal with all issues as soon as possible.
 * In addition, if any suggestions are available, feel free to contact: __Zhai Jingjing__ <zhaijingjing603@gmail.com> or ___Ma Chuang___ <chuangma2006@gmail.com>
 
+### Changelog
+- 2020-05-08: Release malab/pea:v1.2_rstudio image (fix bug in readMapping function by installing bowtie and bowtie2)
+- 2019-06-23: Release malab/pea:v1.1_rstudio image (Provide rstudio-server version of PEA)
+- 2018-04-15: Release malab/pea
+
 ### References
   * Chen, W.*, et al.* Identifying N6-methyladenosine sites in the Arabidopsis
    thaliana transcriptome. *Mol Genet Genomics* 2016;291(6):2225-2229.  
