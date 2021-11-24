@@ -442,7 +442,8 @@ cross_validation <- function( seed = 1, method = c("randomForest", "svm"),
        iterRes <- list( permutRes = permutRes, method = method, classifier = maxAUC_Classifer, 
                      predictionScores = prediction.score, negativeScores = negatives.score, 
                      unlabelScores = unlabels.score, threshold = positive.Threshold, 
-                     positives = positives, negatives = names(positives.score), unlabels = names(unlabels.score), #here negatives mean the "negatives" started at this iteration time. 
+                     positives = positives, negatives = names(negatives.score), 
+                       unlabels = names(unlabels.score), #here negatives mean the "negatives" started at this iteration time. 
                      finalNegatives = finalNegatives, finalUnlabels = finalUnlabels )
        save( iterRes, file = resultDir )
     }
