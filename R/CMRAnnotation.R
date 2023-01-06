@@ -51,8 +51,8 @@ runTopGO <- function(geneID, statistic = "fisher", algorithm = "elim",
   results.tab.BP <- GenTable(object = go.obj.BP, elimFisher = results.BP,
                              topNodes = topNodes)
   gene.BP <- genesInTerm(object = go.obj.BP, whichGO = results.tab.BP$GO.ID)
-  inter.gene.BP <- unlist(lapply(X = gene.BP, FUN = function(x) intersect(x, geneID)))
-  inter.gene.BP <- paste(inter.gene.BP, collapse = ';')
+  inter.gene.BP <- lapply(X = gene.BP, FUN = function(x) intersect(x, geneID))
+  inter.gene.BP <- unlist(lapply(inter.gene.BP, function(x) paste(x, collapse = ';')))
   results.tab.BP$significantGene <- inter.gene.BP
   
   if(length(which(results.tab.BP$elimFisher == "< 1e-30")) != 0){
@@ -64,8 +64,8 @@ runTopGO <- function(geneID, statistic = "fisher", algorithm = "elim",
   results.tab.MF <- GenTable(object = go.obj.MF, elimFisher = results.MF, 
                              topNodes = topNodes)
   gene.MF <- genesInTerm(object = go.obj.MF, whichGO = results.tab.MF$GO.ID)
-  inter.gene.MF <- unlist(lapply(X = gene.MF, FUN = function(x) intersect(x, geneID)))
-  inter.gene.MF <- paste(inter.gene.MF, collapse = ';')
+  inter.gene.MF <- lapply(X = gene.MF, FUN = function(x) intersect(x, geneID))
+  inter.gene.MF <- unlist(lapply(inter.gene.MF, function(x) paste(x, collapse = ';')))
   results.tab.MF$significantGene <- inter.gene.MF
   if(length(which(results.tab.MF$elimFisher == "< 1e-30")) != 0){
     results.tab.MF[which(results.tab.MF$elimFisher == "< 1e-30"), ]$elimFisher <- 1e-30
@@ -75,8 +75,9 @@ runTopGO <- function(geneID, statistic = "fisher", algorithm = "elim",
   results.tab.CC <- GenTable(object = go.obj.CC, elimFisher = results.CC, 
                              topNodes = topNodes)
   gene.CC <- genesInTerm(object = go.obj.CC, whichGO = results.tab.CC$GO.ID)
-  inter.gene.CC <- unlist(lapply(X = gene.CC, FUN = function(x) intersect(x, geneID)))
-  inter.gene.CC <- paste(inter.gene.CC, collapse = ';')
+  inter.gene.CC <- lapply(X = gene.CC, FUN = function(x) intersect(x, geneID))
+  inter.gene.CC <- unlist(lapply(inter.gene.CC, function(x) paste(x, collapse = ';')))
+  
   results.tab.CC$significantGene <- inter.gene.CC
   if(length(which(results.tab.CC$elimFisher == "< 1e-30")) != 0){
     results.tab.CC[which(results.tab.CC$elimFisher == "< 1e-30"), ]$elimFisher <- 1e-30
