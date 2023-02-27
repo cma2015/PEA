@@ -141,7 +141,7 @@ unlabelSamples <- findUnlabelSamples(cDNAID = posSamples$cDNAID, motifPos = moti
    In order to be recognized by the ML-based classification models, PEA can transform each sample (*L*-nt flanking sequence centered on m6A or non-m6 modifications) into a (*L*\*4+20+22)-dimensional vector which including *L*\*4 *binary*-based features, 20 *k-mer* based features (*k* = 1 and *k* = 2) and 22 PseDNC-based features.
 ``` R
 # Extracting flanking sequence of 101-nt centered on m6A or non-m6A  
-positives <- posSamples\$positives  
+positives <- posSamples$positives  
 posSeq <- extractSeqs(RNAseq = cDNA, samples = positives, seqLen = 101)  
 unlabelSeq <- extractSeqs(RNAseq = cDNA, samples = unlabelSamples, seqLen = 101)  
 
