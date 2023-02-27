@@ -1,7 +1,7 @@
 ## PEA installation
 ### rstudio version
 ```bash
-docker pull malab/pea:v1.1_rstudio
+docker pull malab/pea:v1.2_rstudio
 ```
 ### R version
   For Mac OS X and Linux operating systems, open the terminal, for Windows operating system, open CMD. Typing the following command:
